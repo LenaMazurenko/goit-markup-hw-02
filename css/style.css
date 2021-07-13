@@ -1,8 +1,12 @@
+:root {
+  --brand-color: #3f51b5;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
+  color: #212121;
 }
 
 /*Header*/
@@ -13,18 +17,20 @@ body {
   font-size: 26px;
   line-height: 31px;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: #2196f3;
   text-decoration: none;
 }
 
-.logo-part {
-  color: #2196f3;
+.logo-part-in-header {
+  color: #000000;
 }
 /*Nav in Header*/
+.nav-in-header {
+  list-style: none;
+}
 .nav-in-header-element > a {
   line-height: 16px;
   letter-spacing: 0.02em;
-  color: #212121;
   text-decoration: none;
 }
 .nav-in-header-element > a:hover,
@@ -32,6 +38,9 @@ body {
   color: #2196f3;
 }
 /*Contacts in Header*/
+.contact-in-header {
+  list-style: none;
+}
 .contact-in-header-element > a {
   line-height: 16px;
   letter-spacing: 0.02em;
@@ -41,4 +50,65 @@ body {
 .contact-in-header-element a:hover,
 .contact-in-header-element a:focus {
   color: #2196f3;
+}
+/*Main*/
+.list-filter {
+  list-style: none;
+}
+.list-filter-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: #f5f4fa;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.list-filter-button:hover,
+.list-filter-button:focus {
+  background-color: #2196f3;
+  color: #ffffff;
+}
+.list-portfolio {
+  list-style: none;
+}
+.project-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+}
+.project-discription {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+/*Footer*/
+footer {
+  background: #2f303a;
+}
+.logo-part-in-footer {
+  color: #ffffff;
+}
+.address-list-in-footer {
+  list-style: none;
+}
+
+.address-in-footer-element-text > a {
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  font-weight: normal;
+  color: #ffffff;
+  text-decoration: none;
+}
+.address-in-footer-element > a {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 171%;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
 }
