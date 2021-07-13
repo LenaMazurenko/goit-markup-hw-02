@@ -1,3 +1,44 @@
 body {
   font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+/*Header*/
+/*Logo*/
+.logo {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+
+.logo-part {
+  color: #2196f3;
+}
+/*Nav in Header*/
+.nav-in-header-element > a {
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+  text-decoration: none;
+}
+.nav-in-header-element > a:hover,
+.nav-in-header-element > a:focus {
+  color: #2196f3;
+}
+/*Contacts in Header*/
+.contact-in-header-element > a {
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #757575;
+  text-decoration: none;
+}
+.contact-in-header-element a:hover,
+.contact-in-header-element a:focus {
+  color: #2196f3;
 }
