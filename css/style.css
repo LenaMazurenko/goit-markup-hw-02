@@ -65,7 +65,7 @@ body {
 .contact-in-header-element a:focus {
   color: var(--blue-text-color);
 }
-/*main HomePage*/
+/*main HomePage.html*/
 .homepage-hero-block {
   background-color: var(--dark-bg-color);
 }
@@ -84,6 +84,7 @@ body {
   border-radius: 4px;
   width: 200px;
   height: 50px;
+  cursor: pointer;
 
   font-weight: bold;
   font-size: 16px;
@@ -146,7 +147,7 @@ body {
   list-style: none;
 }
 
-/*main Portfolio*/
+/*main Portfolio.html*/
 .list-filter {
   list-style: none;
 }
@@ -165,15 +166,21 @@ body {
 .list-filter-button:focus {
   background-color: var(--hover-bg-color);
   color: var(--white-text-color);
+  cursor: pointer;
 }
 .list-portfolio {
   list-style: none;
+}
+.list-portfolio-block-link {
+  text-decoration: none;
+  font-style: normal;
 }
 .project-name {
   font-weight: bold;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  color: var(--main-text-color);
 }
 .project-discription {
   font-size: 16px;
@@ -181,6 +188,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+
 /*Footer*/
 footer {
   background: var(--dark-bg-color);
