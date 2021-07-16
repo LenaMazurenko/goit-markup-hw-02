@@ -2,12 +2,12 @@
   --main-bg-color: #fff;
   --dark-bg-color: #2f303a;
   --button-bg-color: #f5f4fa;
-  --hover-bg-color: #2196f3;
+  --active-color: #2196f3;
 
   --main-text-color: #212121;
   --secondary-text-color: #757575;
   --white-text-color: #fff;
-  --blue-text-color: var(--hover-bg-color);
+  /*--blue-text-color: var(--hover-bg-color);*/
   --black-text-color: #000000;
   --contacts-header-text-color: rgba(255, 255, 255, 0.6);
 }
@@ -20,23 +20,23 @@ body {
   background-color: var(--main-bg-color);
 }
 
-/*Header*/
-/*Logo*/
+/*---------------------HEADER-------------------------*/
+/*------logo*/
 .logo {
-  font-family: Raleway;
-  font-weight: bold;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
   font-size: 26px;
-  line-height: 1.19; /*31px*/
+  line-height: 1.19;
   letter-spacing: 0.03em;
-  color: var(--blue-text-color);
+  color: var(--active-color);
   text-decoration: none;
 }
-
 .logo-part-in-header {
   color: var(--black-text-color);
 }
-/*Nav in Header*/
-.nav-in-header {
+
+/*-----Nav in Header*/
+.list {
   list-style: none;
 }
 .nav-in-header-element > a {
@@ -48,12 +48,10 @@ body {
 }
 .nav-in-header-element > a:hover,
 .nav-in-header-element > a:focus {
-  color: var(--blue-text-color);
+  color: var(--active-color);
 }
-/*Contacts in Header*/
-.contact-in-header {
-  list-style: none;
-}
+
+/*-------Contacts in Header*/
 .contact-in-header-element > a {
   font-weight: 500;
   line-height: 1.14;
@@ -63,9 +61,13 @@ body {
 }
 .contact-in-header-element a:hover,
 .contact-in-header-element a:focus {
-  color: var(--blue-text-color);
+  color: var(--active-color);
 }
-/*main HomePage.html*/
+.nav-in-header-element .current {
+  color: var(--active-color);
+}
+
+/*-----------main_HomePage.html-------------*/
 .homepage-hero-block {
   background-color: var(--dark-bg-color);
 }
@@ -79,14 +81,15 @@ body {
   color: var(--white-text-color);
 }
 .nomepage-button-order {
-  background-color: var(--hover-bg-color);
+  font-family: inherit;
+  background-color: var(--active-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   width: 200px;
   height: 50px;
   cursor: pointer;
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
   align-items: center;
@@ -95,8 +98,9 @@ body {
   color: var(--white-text-color);
 }
 .homepage-advantages-element-title {
-  font-weight: bold;
-  line-height: 1.14;
+  font-size: inherit;
+  font-weight: 700;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-text-color);
@@ -107,7 +111,7 @@ body {
   color: var(--secondary-text-color);
 }
 .homepage-make-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -118,7 +122,7 @@ body {
   background-color: var(--button-bg-color);
 }
 .homepage-team-title {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -141,18 +145,9 @@ body {
   color: var(--secondary-text-color);
 }
 
-.homepage-advantages-list,
-.homepage-make-list,
-.homepage-team-list {
-  list-style: none;
-}
-
-/*main Portfolio.html*/
-.list-filter {
-  list-style: none;
-}
-
-.list-filter-buttons {
+/*---------------------main Portfolio.html--------------------*/
+.list-filter-button {
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -164,19 +159,16 @@ body {
 }
 .list-filter-button:hover,
 .list-filter-button:focus {
-  background-color: var(--hover-bg-color);
+  background-color: var(--active-color);
   color: var(--white-text-color);
   cursor: pointer;
-}
-.list-portfolio {
-  list-style: none;
 }
 .list-portfolio-block-link {
   text-decoration: none;
   font-style: normal;
 }
 .project-name {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -189,7 +181,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-/*Footer*/
+/*----------------FOOTER--------------------*/
 footer {
   background: var(--dark-bg-color);
 }
@@ -197,7 +189,6 @@ footer {
   color: var(--white-text-color);
 }
 .address-list-in-footer {
-  list-style: none;
   font-style: normal;
 }
 

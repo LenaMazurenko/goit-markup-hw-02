@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -16,19 +18,21 @@
     <header>
       <nav>
         <!-- logo in header -->
-        <a href="index.html" class="logo"
+        <a href="./index.html" class="logo"
           >Web<span class="logo-part-in-header">Studio</span></a
         >
         <!-- navigation in header-->
-        <ul class="nav-in-header">
-          <li class="nav-in-header-element"><a href="index.html">Студия</a></li>
+        <ul class="nav-in-header list">
           <li class="nav-in-header-element">
-            <a href="portfolio.html">Портфолио</a>
+            <a href="./index.html" class="current">Студия</a>
+          </li>
+          <li class="nav-in-header-element">
+            <a href="./portfolio.html">Портфолио</a>
           </li>
           <li class="nav-in-header-element"><a href="#">Контакты</a></li>
         </ul>
         <!-- contacts in header-->
-        <ul class="contact-in-header">
+        <ul class="contact-in-header list">
           <li class="contact-in-header-element">
             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
@@ -54,8 +58,8 @@
       <!-- block Advantages -->
       <section class="homepage-advantages-block">
         <h2 class="homepage-advantages-title">Преимущества</h2>
-        <ul class="homepage-advantages-list">
-          <li class="homepage-advantages-element">
+        <ul class="homepage-advantages-list list">
+          <li>
             <h3 class="homepage-advantages-element-title">
               Внимание к деталям
             </h3>
@@ -93,7 +97,7 @@
       <!-- block Make -->
       <section>
         <h2 class="homepage-make-title">Чем мы занимаемся</h2>
-        <ul class="homepage-make-list">
+        <ul class="homepage-make-list list">
           <li>
             <img
               src="images/box1.jpg"
@@ -121,7 +125,7 @@
       <!-- block OurTeam -->
       <section class="homepage-team-block">
         <h2 class="homepage-team-title">Наша команда</h2>
-        <ul class="homepage-team-list">
+        <ul class="homepage-team-list list">
           <li>
             <img src="images/photo1.jpg" alt="фото сотрудника" width="270" />
             <h3 class="homepage-surname-title">Игорь Демьяненко</h3>
@@ -152,7 +156,7 @@
         >Web<span class="logo-part-in-footer">Studio</span></a
       >
       <address class="block-address-in-footer">
-        <ul class="address-list-in-footer">
+        <ul class="address-list-in-footer list">
           <li class="address-in-footer-element-text">
             <a href="#">г. Киев, пр-т Леси Украинки, 26</a>
           </li>
